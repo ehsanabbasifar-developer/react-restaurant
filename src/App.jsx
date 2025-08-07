@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import AppRoutes from "./router/AppRoutes";
 
 export default function App() {
-  return (
-    <div className="bg-red-700 font-Vazirmatn font-black">سلام</div>
-  )
+  return <AppRoutes />;
 }
