@@ -17,9 +17,6 @@ export default function Navbar() {
         <h1 className="text-lg font-bold">{restaurantName}</h1>
         <ul className="flex  items-center justify-between gap-x-4">
           <li>
-            <Search />
-          </li>
-          <li>
             <NavLink to={"/menu"}>منو</NavLink>
           </li>
           <li>
@@ -27,6 +24,9 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink to={"/Login"}>ورود</NavLink>
+          </li>
+          <li>
+            <Search />
           </li>
         </ul>
       </nav>
