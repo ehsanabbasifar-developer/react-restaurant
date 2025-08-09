@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function AppLayout({ children }) {
   return (
-    <div className="mx-auto bg-background min-h-100 max-w-5xl">
+    <div className="container mx-auto bg-background min-h-100 max-w-5xl">
       <Header />
       
     </div>
