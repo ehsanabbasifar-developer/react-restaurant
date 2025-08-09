@@ -7,8 +7,8 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center p-3 gap-4">
-      <h1 className="flex-5 sm:flex-1 text-lg font-bold">{restaurantName}</h1>
-      <div className="flex-3 sm:flex-1">
+      <h1 className="flex-5 md:fx-1 text-lg font-bold">{restaurantName}</h1>
+      <div className="flex-3 md:flex-1">
         <Search />
       </div>
     </nav>
