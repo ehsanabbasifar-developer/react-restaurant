@@ -1,0 +1,12 @@
+import React from "react";
+
+export default function SignUpForm() {
+  return (
+    <form className="font-Vazirmatn">
+      <div className="flex items-center">
+        <label className="font-regular">نام و نام خانوادگی</label>
+        <input type="text" className="bg-yellow-400" />
+      </div>
+    </form>
+  );
+}
