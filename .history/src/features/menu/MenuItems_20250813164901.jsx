@@ -1,0 +1,13 @@
+import React from "react";
+
+export default function MenuItems() {
+  const data = [
+    {
+      name: "Prosciutto e Rucola",
+      description: "tomato, mozzarella, prosciutto, arugula",
+      price: 16.0,
+      img: "./pizza-4.jpg",
+    },
+  ];
+  return <div>MenuItems</div>;
+}
