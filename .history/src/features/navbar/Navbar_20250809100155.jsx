@@ -1,0 +1,16 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Search from "../searchOrder/Search";
+
+export default function Navbar() {
+  const restaurantName = "رستوران ری اکت اصفهان";
+
+  return (
+    <nav className="flex items-center p-3 gap-4">
+      <h1 className="flex-5 md text-lg font-bold">{restaurantName}</h1>
+      <div className="flex-3 md:flex-1">
+        <Search />
+      </div>
+    </nav>
+  );
+}
