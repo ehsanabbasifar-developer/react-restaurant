@@ -1,0 +1,19 @@
+import React from "react";
+import IncrementDecrementButton from "../../ui/IncrementDecrementButton";
+
+export default function OrderItem({ data }) {
+  return (
+    <li className="p-2 mt-3 flex flex-wrap   justify-between items-center">
+      <span className="text-lg سپ:ذشسه  text-right block mb-2 basis-full">
+        {data.number} ✖ {data.name}
+      </span>
+      <IncrementDecrementButton>حذف</IncrementDecrementButton>
+      <div>
+        <IncrementDecrementButton>-</IncrementDecrementButton>
+        <span className="font-bold mx-3">{data.number}</span>
+        <IncrementDecrementButton>+</IncrementDecrementButton>
+      </div>
+      <span className="font-bold">{data.price}$</span>
+    </li>
+  );
+}

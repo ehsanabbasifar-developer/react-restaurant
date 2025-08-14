@@ -1,0 +1,14 @@
+import React, { useEffect } from 'react'
+import AppLayout from '../layout/AppLayout'
+import { getMenu } from '../api/apiTest'
+
+export default function Menu() {
+   
+  return (
+    <main>
+        <AppLayout>
+            <M
+        </AppLayout>
+    </main>
+  )
+}

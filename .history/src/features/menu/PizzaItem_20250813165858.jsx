@@ -1,0 +1,16 @@
+import React from 'react'
+
+export default function PizzaItem({data}) {
+    console.log(data);
+    
+  return (
+    <div className='flex p-3 gap-x-'>
+        <div>
+            <img src= {data.img} className='h-24'  />
+        </div>
+        <div>
+            <h3>{data.name}</h3>
+        </div>
+    </div>
+  )
+}
