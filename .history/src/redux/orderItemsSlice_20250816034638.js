@@ -1,0 +1,33 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  pizzas: [],
+};
+
+const orderItemsSlice = createSlice({
+  name: "orderItems",
+  initialState,
+  reducers: {
+    addItem: (state, action) => {
+      state.pizzas.push(action.payload);
+    },
+    removeItem: (state, action) => {
+      state.pizzas = state.pizzas.filter((item) => item.id !== action.payload);
+    },
+    clearList: (state, action) => {
+      state.pizzas = [];
+    },
+    increaseNumber: (state, action) => {
+      const target = state.pizzas.filter(
+        (item) => item.id === action.payload.id
+      );
+      target += 1;
+    },
+    decreaseNumber: (state, action) => {
+      const target = state.pizzas.filter(
+        (item) => item.id === action.payload.id
+      );
+      target -= 1;
+    },
+  },
+});

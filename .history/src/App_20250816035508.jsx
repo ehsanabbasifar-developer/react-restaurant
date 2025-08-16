@@ -8,7 +8,8 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
-        <AppRoutes />;
+
+      <AppRoutes />;
       </Provider>
     </QueryClientProvider>
   );
