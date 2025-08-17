@@ -1,0 +1,21 @@
+import React from "react";
+
+export default function PizzaItem({ data }) {
+  return (
+    <li className="mx-auto">
+      <div className="flex p-2 gap-x-3">
+        
+        <div className="flex flex-col gap-y-1">
+          <h3 className="font-bold">{data.pizza_name}</h3>
+          <p className="font-thin">{data.description}</p>
+          <div className="flex justify-between w-full">
+            <span>{data.price}$</span>
+            <button className="bg-yellow-400 rounded-full p-1 px-3 ">
+              ثبت سفارش
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  );
+}

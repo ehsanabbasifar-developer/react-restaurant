@@ -1,0 +1,8 @@
+import { menuData } from "../../api/apiMenu";
+
+export default function useMenu () {
+      const { data, isLoading, error } = useQuery({
+    queryFn: menuData,
+    queryKey: menuR,
+  });
+}
