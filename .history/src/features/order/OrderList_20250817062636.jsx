@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 export default function OrderList() {
 
   const data = useSelector((store) => store.orderItems.pizzas);
-
+  console.log(store);
 
   return (
     <ul className="flex flex-col">

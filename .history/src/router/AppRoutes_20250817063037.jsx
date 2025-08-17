@@ -14,14 +14,7 @@ export default function AppRoutes() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/menu" element={<Menu />} />
-        <Route
-          path="/order"
-          element={
-            <ProtectedOrderRoute>
-              <Order />
-            </ProtectedOrderRoute>
-          }
-        />
+        <Route path="/order" element={<ProtectedOrderRoute<Order />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../../redux/orderItemsSlice";
+import {
+  addItem,
+  decraseNumber,
+  ,
+  
+} from "../../redux/orderItemsSlice";
 import SetupOrderButton from "../../ui/SetupOrderButton";
 
 export default function PizzaItem({ data }) {

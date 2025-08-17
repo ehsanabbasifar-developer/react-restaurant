@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../../redux/orderItemsSlice";
-import SetupOrderButton from "../../ui/SetupOrderButton";
+import {
+  addItem,
+  decreaseNumber,
+  increaseNumber,
+} from "../../redux/orderItemsSlice";
 
 export default function PizzaItem({ data }) {
   const [isSelected, setIsSelected] = useState(false);
@@ -27,7 +30,24 @@ export default function PizzaItem({ data }) {
           <div className="flex justify-between w-full">
             {isSelected ? (
               <div className="flex gap-x-1">
-                <SetupOrderButton id={data.id} number={number} />
+                <button on className="bg-yellow-400 rounded-full p-2 font-bold">
+                  حذف
+                </button>
+                <div>
+                  <button
+                    onClick={() => dispatch(decreaseNumber(data.id))}
+                    className="bg-yellow-400 rounded-full p-2 font-bold"
+                  >
+                    -
+                  </button>
+                  <span className="font-bold mx-3">{number}</span>
+                  <button
+                    onClick={() => dispatch(increaseNumber(data.id))}
+                    className="bg-yellow-400 rounded-full p-2 font-bold"
+                  >
+                    +
+                  </button>
+                </div>
               </div>
             ) : (
               <button

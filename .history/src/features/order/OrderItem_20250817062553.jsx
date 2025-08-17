@@ -1,9 +1,7 @@
 import React from "react";
-import SetupOrderButton from "../../ui/SetupOrderButton";
+import IncrementDecrementButton from "../../ui/IncrementDecrementButton";
 
 export default function OrderItem({ data }) {
-  console.log(data);
-
   return (
     <li className="p-2 mt-3 flex flex-wrap justify-between sm:flex-row-reverse items-center  border-b-gray-400 border-b ">
       <div className="mb-2 basis-full sm:basis-auto">
@@ -12,8 +10,13 @@ export default function OrderItem({ data }) {
         </span>
       </div>
       <div className="flex justify-between items-center gap-x-4">
-        <SetupOrderButton id={data.id} number={data.number} />
-        <span className="font-bold">{data.price * data.number}$</span>
+        <IncrementDecrementButton>حذف</IncrementDecrementButton>
+        <div>
+          <IncrementDecrementButton>-</IncrementDecrementButton>
+          <span className="font-bold mx-3">{data.number}</span>
+          <IncrementDecrementButton>+</IncrementDecrementButton>
+        </div>
+        <span className="font-bold">{data.price}$</span>
       </div>
     </li>
   );

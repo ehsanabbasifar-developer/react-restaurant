@@ -1,4 +1,5 @@
 import React from "react";
+import IncrementDecrementButton from "../../ui/IncrementDecrementButton";
 import SetupOrderButton from "../../ui/SetupOrderButton";
 
 export default function OrderItem({ data }) {
@@ -13,7 +14,7 @@ export default function OrderItem({ data }) {
       </div>
       <div className="flex justify-between items-center gap-x-4">
         <SetupOrderButton id={data.id} number={data.number} />
-        <span className="font-bold">{data.price * data.number}$</span>
+        <span className="font-bold">{data.price}$</span>
       </div>
     </li>
   );
