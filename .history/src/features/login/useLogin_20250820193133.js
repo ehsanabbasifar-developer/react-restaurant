@@ -9,11 +9,10 @@ export default function useLogin() {
   const { mutate: mutateLogin, isPending } = useMutation({
     mutationFn: ({ email, password }) => loginApi({ email, password }),
     onSuccess: () => {
-      toast.success("با موفقیت وارد شدید"),
-        navigate("/menu", { replace: true });
+      toast.success("با موفقیت وارد شدید"), navigate("/menu" , {re});
     },
     onError: () => toast.error("رمز عبور یا نام کاربری اشتباه است"),
   });
 
-  return { mutateLogin, isPending };
+  return { mutateLogin, isPending };    
 }

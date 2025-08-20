@@ -10,15 +10,11 @@ export default function LoginForm() {
     e.preventDefault();
     if (!email) return;
     if (!password) return;
-    mutateLogin(
-      { email, password },
-      {
-        onSettled: () => {
-          setEmail("");
-          setPassword("");
-        },
+    mutateLogin({ email, password } , {
+      onSettled : () => {
+        sete
       }
-    );
+    });
   }
 
   return (
@@ -46,9 +42,7 @@ export default function LoginForm() {
       </div>
       <button
         disabled={isPending}
-        className={`${
-          isPending ? "bg-yellow-200" : "bg-yellow-400"
-        } rounded-full cursor-pointer mt-4  px-6 py-2`}
+        className={`${isPending ? "bg-yellow-200" : "bg-yellow-400" } rounded-full cursor-pointer mt-4  px-6 py-2`}
       >
         {isPending ? "در حال دریافت اصلاعات" : "ورود به حساب کاربری "}
       </button>

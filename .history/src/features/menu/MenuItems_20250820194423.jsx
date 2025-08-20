@@ -5,7 +5,6 @@ import useMenu from "./useMenu";
 import { useSelector } from "react-redux";
 import AcceptMenu from "./AcceptMenu";
 import Error from "../../ui/Error";
-import Logout from "../logout/Logout";
 export default function MenuItems() {
   const { data, isLoading, error } = useMenu();
   const isFind = useSelector((store) => store.orderItems.pizzas.length >= 1);
@@ -13,7 +12,7 @@ export default function MenuItems() {
 
   return (
     <div className="relative min-h-[300px]">
-      <Logout/>
+      <log
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center">
           <PulseLoader size={20} color=" #bfc1c5" />
