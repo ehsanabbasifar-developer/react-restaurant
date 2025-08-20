@@ -1,0 +1,14 @@
+import React from "react";
+import AppLayout from "../layout/AppLayout";
+import LoginForm from "../features/login/LoginForm";
+export default function Login() {
+  return (
+    <AppLayout>
+      <main>
+        <div className="w-2/3 sm:w-1/2 mx-auto p-5 flex jus">
+          <LoginForm />
+        </div>
+      </main>
+    </AppLayout>
+  );
+}

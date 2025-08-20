@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function ProtectedOrderRoute({ children }) {
   const isFind = useSelector((store) => store.orderItems.pizzas.length >= 1);
-  
+
   const navigate = useNavigate();
   useEffect(() => {
     if (!isFind) navigate("/menu");
