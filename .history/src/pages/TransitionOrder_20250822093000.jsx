@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 export default function TransitionOrder() {
   const { transitionId } = useParams();
   const { data , error } = useTransitionOrder(transitionId);
-  console.log(data);
+  console.log(data);  
   return (
     <AppLayout>
       <div className="flex flex-col font-Vazirmatn p-3 mt-4">

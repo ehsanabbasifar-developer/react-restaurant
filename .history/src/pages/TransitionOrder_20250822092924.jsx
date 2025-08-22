@@ -7,6 +7,8 @@ export default function TransitionOrder() {
   const { transitionId } = useParams();
   const { data , error } = useTransitionOrder(transitionId);
   console.log(data);
+  const [arr] = data
+  log
   return (
     <AppLayout>
       <div className="flex flex-col font-Vazirmatn p-3 mt-4">

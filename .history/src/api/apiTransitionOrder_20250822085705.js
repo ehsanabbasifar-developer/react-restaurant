@@ -1,0 +1,5 @@
+export async function TransitionOrder() {
+  let { data: orders, error } = await supabase
+    .from("orders")
+    .select("some_column,other_column");
+}
