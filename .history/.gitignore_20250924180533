@@ -2,7 +2,7 @@
 # 🔧 Core
 # -----------------------------
 node_modules/
-dist/
+dis
 build/
 dist-ssr/
 
