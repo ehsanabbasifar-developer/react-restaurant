@@ -2,6 +2,7 @@
 # 🔧 Core
 # -----------------------------
 node_modules/
+
 build/
 dist-ssr/
 
