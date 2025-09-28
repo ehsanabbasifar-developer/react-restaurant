@@ -3,7 +3,7 @@ import React from "react";
 import AppLayout from "../layout/AppLayout";
 import Main from "../layout/Main";
 import IntroLayout from "../layout/IntroLayout";
-import Feature from "../features/feature/Feature";
+import Feature from "../layout/Feature";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
           />
         </div>
 
-        <Feature/>
+     <Feature/>
 
         <section className="py-12 px-4 sm:px-8 bg-red-50 text-center">
             <p className="text-2xl font-semibold text-gray-700">
