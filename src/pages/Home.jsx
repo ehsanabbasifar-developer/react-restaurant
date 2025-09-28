@@ -43,7 +43,7 @@ export default function Home() {
 
      <Feature/>
 
-        <section className="py-12 px-4 sm:px-8 bg-red-50 text-center">
+        <section className="py-12 mt-4 px-4 sm:px-8 bg-red-50 text-center">
             <p className="text-2xl font-semibold text-gray-700">
                 "هر اسلایس، یک تجربه جدید از عشق و هنر آشپزی است."
             </p>
